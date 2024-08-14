@@ -1,0 +1,527 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.mobileX{
+
+    overflow: hidden;
+}
+
+.bar{
+
+    display: none;
+}
+
+/* Variable calsses */
+:root{
+
+    --gradient: linear-gradient(to right,rgb(212, 53, 75),rgb(253, 106, 95));
+}
+
+
+/* utility classes */
+.flex{
+
+    display: flex;
+}
+
+.gradient{
+
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.para{
+
+    color: rgb(155, 153, 153);
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+
+}
+
+.white{
+
+    color: white;
+
+}
+
+.pink{
+
+    color: rgb(212, 53, 75);
+
+}
+
+.gray{
+
+    color: rgb(94, 94, 94);
+}
+
+
+
+
+/* header is here */
+header{
+
+    background-color: rgb(28,27,33);
+    padding-inline: 50px;
+    padding-bottom: 40px;
+    color: white;
+
+}
+
+nav{
+
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.X{
+
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+nav ul{
+
+    list-style: none;
+    gap: 40px;
+    
+}
+
+ul a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: bold;
+
+
+}
+
+ul a::before{
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background:var(--gradient);
+    transition:all 0.5s;
+
+}
+
+ul a:hover::before{
+
+    width: 100%;
+}
+
+
+/* styling of banner-content start */
+.banner-content{
+
+    text-align: center;
+    padding: 100px 0px;
+
+}
+
+.banner-content h1{
+
+    font-size: 3.5rem;
+    
+}
+
+.banner-content p{
+
+    padding-block:15px 40px;
+    font-size: 0.9rem;
+
+}
+
+.btn{
+
+    color: white;
+    background: var(--gradient);
+    padding: 10px 3px 10px 10px;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.btn-icon{
+
+    background-color: #fff;
+    padding: 5px;
+    color: black;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+
+/* styling for bottom-address start */
+.bottom-address{
+
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+}
+
+.bottom-address-left span{
+
+    padding-left: 15px;
+
+}
+.bottom-address-right i{
+
+    padding-left: 15px;
+
+}
+
+
+/* STYLING FOR MAIN START */
+
+/* styling of first section start */
+.first{
+
+    background-color: #232529;
+    position: relative;
+    /* padding-bottom: 300px; */
+}
+
+.first-text{
+
+    padding: 70px 20px 70px 200px;
+
+}
+
+.first h2{
+
+    color: white;
+    
+}
+
+.first>.first-text>h2>span{
+
+    position: relative;
+    display: inline-block;
+
+}
+
+.first>.first-text>h2>span::before{
+
+
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 2px;
+    background: var(--gradient);
+
+    
+}
+
+.first-text p{
+
+    width: 55%;
+    padding-top: 20px;
+
+}
+
+.message-icon{
+
+    background:var(--gradient);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    font-size: 1.3rem;
+
+}
+
+
+/* styling for second section start */
+.images{
+
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.images .img-box{
+
+    flex-basis: 24%;
+
+}
+
+.images .img-box img{
+
+    width: 100%;
+    height: 200px;
+}
+
+
+/* styling for big-icon section start */
+.first-bottom-text{
+
+    padding-bottom: 100px;
+
+}
+.first-bottom-text h2{
+
+    text-align: center;
+    margin-block: 40px 80px;
+    font-size: 3rem;
+    font-weight: lighter;
+
+}
+
+.big-icons{
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.big-icon-box{
+
+    flex-basis: 15%;
+    position: relative;
+}
+
+.big-icon-box::before{
+
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 75px;
+    width: 40px;
+    height: 2px;
+    background: var(--gradient);
+
+}
+
+.big-icon{
+
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.big-icon img{
+
+    width: 50%;
+    height: 50%;
+}
+
+.big-icon-box h3{
+
+    color: white;
+    margin-block:20px 30px;
+    text-align: center;
+    
+}
+
+.big-icon-box p{
+
+
+    text-align: center;
+   
+
+}
+
+/* STYLING FOR SECOND SECTION START */
+/* styling for second-top start */
+.second{
+
+    background-color: rgb(31,33,37);
+}
+
+.second-content{
+
+    padding: 60px 160px;
+
+}
+
+.second-top-boxes{
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second-top>h2{
+
+    color: white;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.second-top>p{
+
+    text-align: center;
+    padding-block: 20px 70px;
+
+}
+
+.second-top-box{
+
+    border: 1px solid white;
+    padding: 15px 20px;
+    transition:0.5s ease-out;
+}
+
+.second-top-box>h3{
+
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+}
+
+
+.second-top-box:hover{
+
+    background: var(--gradient);
+
+}
+
+.second-top-box:hover p{
+
+    color: white;
+
+}
+
+.second-top-box:hover h3{
+
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+/* styling for second-bottom start */
+.second-bottom{
+
+    padding-block: 40px 0px;
+}
+.h-b{
+
+    justify-content: space-between;
+
+}
+
+.h-b h2{
+
+    color: white;
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.h-b button{
+
+    border: none;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    padding: 5px 55px;
+    border-radius: 30px;
+}
+
+
+.second-bottom-icons{
+
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.second-bottom-icon-box{
+
+    flex-basis: 25%;
+
+}
+
+
+.second-bottom-icon h3{
+
+    padding-block: 10px 30px;
+    color: white;
+}
+
+.second-bottom-icon h3 span{
+
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* Styling for footer start */
+footer{
+
+    background-color: rgb(29,28,34);
+    padding: 50px 160px;
+}
+
+.footer-content{
+
+    justify-content: space-between;
+}
+
+.footer-box{
+
+    width: 40%;
+}
+
+.footer-box>p{
+
+    padding-block: 10px 30px;
+}
+
+.bottom-address-icons i{
+
+    padding-right: 15px;
+}
+
+.footer-right {
+
+    gap: 40px;
+}
+
+.footer-right  ul{
+
+    list-style: none;
+}
+
+.footer-right  ul li{
+
+    color: gray;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footer-right p{
+
+    padding-block: 10px 0px;
+}
