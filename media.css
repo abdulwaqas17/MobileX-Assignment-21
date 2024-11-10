@@ -1,5 +1,4 @@
 
-
 @media (max-width:425px) {
     
     .links{
@@ -60,7 +59,8 @@
 
     .big-icon-box::before {
 
-        left: 135px;
+        width: 65px;
+        left: 155px;
         bottom: -10px;
     }
 

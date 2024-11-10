@@ -308,7 +308,7 @@ ul a:hover::before{
     position: absolute;
     bottom: -20px;
     left: 75px;
-    width: 40px;
+    width: 50px;
     height: 2px;
     background: var(--gradient);
 
